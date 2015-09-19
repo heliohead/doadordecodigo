@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: doadordecodigo_development
+
+test:
+  <<: *default
+  database: doadordecodigo_test
+
+production:
+  <<: *default
+  database: doadordecodigo_production
+  username: doadordecodigo
+  password: <%= ENV['DOADORDECODIGO_DATABASE_PASSWORD'] %>
