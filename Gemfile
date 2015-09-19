@@ -17,13 +17,14 @@ group :development, :test do
 end
 
 group :development do
-  gem 'foreman'
+  gem 'foreman',     '~> 0.78.0'
   gem 'web-console', '~> 2.0'
-  gem 'spring'
+  gem 'spring',      '~> 1.4.0'
 end
 
 group :test do
-  gem 'factory_girl_rails'
-  gem 'shoulda-matchers'
+  gem 'codeclimate-test-reporter', '~> 0.4.8'
+  gem 'factory_girl_rails',        '~> 4.5.0'
+  gem 'shoulda-matchers',          '~> 2.8.0'
 end
 
