@@ -19,7 +19,7 @@ $ bundle exec foreman start
 
 # Código de conduta
 
-## TODO
+Este projeto possui um código de conduta e o mesmo está disponível em: https://github.com/doadordecodigo/codigo-de-conduta
 
 ***
 
