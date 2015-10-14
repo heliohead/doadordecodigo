@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/doadordecodigo/doadordecodigo.svg)](https://travis-ci.org/doadordecodigo/doadordecodigo)
 [![Code Climate](https://codeclimate.com/github/doadordecodigo/doadordecodigo/badges/gpa.svg)](https://codeclimate.com/github/doadordecodigo/doadordecodigo)
 [![Test Coverage](https://codeclimate.com/github/doadordecodigo/doadordecodigo/badges/coverage.svg)](https://codeclimate.com/github/doadordecodigo/doadordecodigo/coverage)
-
+[![security](https://hakiri.io/github/doadordecodigo/doadordecodigo/master.svg)](https://hakiri.io/github/doadordecodigo/doadordecodigo/master)
 # Setup & Start
 
 ```
