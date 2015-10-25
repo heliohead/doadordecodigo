@@ -1,0 +1,37 @@
+<div class="box-600 panel panel-default">
+  <div class="panel-heading"><%= t 'pages.login.title' %></div>
+  <div class="panel-body">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
+      <div class="form-group">
+        <%= f.label :email, for: 'inputEmail1', class: 'col-sm-2 control-label' %>
+        <div class="col-sm-10">
+          <%= f.email_field :email, id: 'inputEmail1', class: 'form-control', placeholder: t('pages.login.placehold.email'), autofocus: true %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :password, for: 'inputPassword2', class: 'col-sm-2 control-label' %>
+        <div class="col-sm-10">
+          <%= f.password_field :password, id: 'inputPassword2', class: 'form-control', placeholder: t('pages.login.placehold.password'), autocomplete: "off" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <% if devise_mapping.rememberable? -%>
+            <label>
+              <%= f.check_box :remember_me %>
+              <%= t 'pages.login.remember_me' %>
+            </label>
+            <% end -%>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <%= f.submit t('pages.login.sigin_button'), class: "btn btn-default" %>
+          <p><%= render "devise/shared/links" %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
