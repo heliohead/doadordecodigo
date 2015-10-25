@@ -1,15 +1,38 @@
-<h1>O que é?</h1>
-<p>O 'doador de código' nasceu com o propósito de unir programadores iniciantes com projetos sociais que precisam de um portal online, ou qualquer tipo de presença na internet para divulgar suas causas.</p>
+<div class="jumbotron">
+  <h1><%= t 'pages.home.what_is' %></h1>
+  <p class="lead"><%= t 'pages.home.what_is_description' %></p>
+  <p><%= link_to t('pages.home.start_now_button'), new_user_registration_path, class: 'btn btn-lg btn-success' %></p>
+</div>
 
-<h1>Por que?</h1>
-<p>Existe uma enorme comunidade de desenvolvedores de software que se ajudam todos os dias com revisão de código uns dos outros(<a href="http://tableless.com.br/contribuindo-em-projetos-open-source-com-o-github/" target="_blank">ver seção Pull Request</a>) e uma quantidade enorme de projetos sociais que são desconhecidos e boa parte da população justamente por estarem fora da Web. Juntando tudo isso, tentamos construir vidas melhores se valendo da internet e do desenvolvimento de software. Gostou? Então continue lendo... <p>
+<div class="container marketing">
+  <hr class="featurette-divider">
 
-<h1>Como participar?</h1>
-<p>Você pode participar de várias formas</p>
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading"><%= t 'pages.home.motivation' %></h2>
+      <p class="lead"><%= t 'pages.home.motivation_description' %></p>
+    </div>
+    <div class="col-md-5">
+      <%= image_tag('motivation.jpg', class: 'featurette-image img-responsive center-block', alt: 'Motivation') %>
+    </div>
+  </div>
 
-<ul>
-  <li>Sendo um mentor de desenvolvedores iniciantes</li>
-  <li>Desenvolvendo sites para os projetos sociais</li>
-  <li>Cadastrando sua idéia(projeto social) para desenvolvermos seu site</li>
-</ul>
+  <hr class="featurette-divider">
 
+  <div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+      <h2 class="featurette-heading"><%= t 'pages.home.how_to_participate' %></h2>
+      <p class="lead">
+        <%= t 'pages.home.how_to_participate_description' %>
+          <ul>
+            <li><%= t 'pages.home.participate_being_mentor' %></li>
+            <li><%= t 'pages.home.participate_developing_sites' %></li>
+            <li><%= t 'pages.home.participate_giving_ideas' %></li>
+          </ul>
+      </p>
+    </div>
+    <div class="col-md-5 col-md-pull-7">
+      <%= image_tag('team.jpg', class: 'featurette-image img-responsive center-block', alt: 'Team') %>
+    </div>
+  </div>
+</div>
