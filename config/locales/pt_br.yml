@@ -1,0 +1,56 @@
+"pt-br":
+  pages:
+    layout:
+      title: "Doador de Código"
+      login: "Entrar"
+      logout: "Sair"
+      menu:
+        home: "Home"
+      built_with_love: "Feito com ♥"
+      back_top: "<i class=\"glyphicon glyphicon-arrow-up\"></i> Topo"
+      privacy_term: "Termo de Privacidade"
+      toggle_navigation: "Abrir Navegação"
+    login:
+      title: "Login"
+      remember_me: "Lembre-se de mim"
+      sigin_button: "Entrar"
+      placehold:
+        email: "Digite seu email"
+        password: "Digite sua senha"
+    new_account:
+      title: "Criar Nova Conta"
+      create_button: "Criar"
+      characters_minimum: "Mínimo de %{length} caracteres"
+      placehold:
+        email: "Digite um email válido"
+        password: "Digite uma senha válida"
+        confirmation: "Digite a senha novamente"
+    home:
+      what_is: "O que é?"
+      what_is_description: "O 'doador de código' nasceu com o propósito de unir programadores iniciantes com projetos sociais que precisam de um portal online, ou qualquer tipo de presença na internet para divulgar suas causas."
+      start_now_button: "Começar Agora!"
+      motivation: "Por que?"
+      motivation_description: "O 'doador de código' nasceu com o propósito de unir programadores iniciantes com projetos sociais que precisam de um portal online, ou qualquer tipo de presença na internet para divulgar suas causas."
+      how_to_participate: "Como participar?"
+      how_to_participate_description: "Você pode participar de várias formas"
+      participate_being_mentor: "Sendo um mentor de desenvolvedores iniciantes"
+      participate_developing_sites: "Desenvolvendo sites para os projetos sociais"
+      participate_giving_ideas: "Cadastrando sua idéia(projeto social) para desenvolvermos seu site"
+    forgot_password:
+      title: "Esqueceu sua senha?"
+      send_instructions_button: "Resetar Senha"
+  activerecord:
+    errors:
+      messages:
+        blank: "não pode ficar vazio"
+        too_short: "muito curta, o mínimo é %{count} caracteres."
+        too_long: "muito grande, o máximo é %{count} caracteres."
+        confirmation: "confirmação diferente da senha."
+        taken: "email já cadastrado em outra conta."
+        not_found: "Email não encontrado"
+    attributes:
+      user:
+        name: "Nome"
+        email: "Email"
+        password: "Senha"
+        password_confirmation: "Confirmação"
